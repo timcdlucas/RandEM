@@ -1,5 +1,10 @@
-# remBoot: An R package for Random Encounter Modelling
-Anthony Caravaggi  
+---
+title: "remBoot: An R package for Random Encounter Modelling"
+author: "Anthony Caravaggi"
+output:  
+      html_document:  
+        keep_md: TRUE 
+---
 
 
 remBoot is an implementation of the Random Encounter Model (REM) developed by Rowcliffe _et al._ (2008). The REM is based on brownian motion and allows the estimation of animal densities for a given survey area. The REM is particularly useful in that species do not need to be marked or exhibit individual markings for estimates to be calculated. This package contains a number of functions which allow the user to calculate densities for one or more sites and bootstrap their data to calculate variance.   
