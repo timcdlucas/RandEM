@@ -50,4 +50,3 @@ output <- remBoot(hDat, tm = 1800, v = 0.89, nboots = 1000, error_stat = c("ci")
 \keyword{model,}
 \keyword{population,}
 \keyword{random}
-

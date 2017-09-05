@@ -20,4 +20,3 @@ Rowcliffe et al. (2008) Journal of Applied Ecology 45:1228-1236
 (\href{http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2008.01473.x/full}{J Appl Ecol})
 }
 \keyword{datasets}
-
