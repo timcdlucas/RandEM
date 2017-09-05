@@ -1,3 +1,3 @@
 library(testthat)
 
-test_check("remBoot")
+test_check("RandEM")
