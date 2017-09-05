@@ -24,4 +24,3 @@ remsSD <- lapply(remsD, sd)
 remsSD
 
 }
-

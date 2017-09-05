@@ -1,4 +1,3 @@
 library(testthat)
-library(remBoot)
 
-test_check("remBoot")
+test_check("RandEM")

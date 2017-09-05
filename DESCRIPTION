@@ -2,14 +2,14 @@ Package: RandEM
 Title: Population density estimates via Random Encounter Models in R
 Version: 0.0.0.9000
 Authors@R: c(
-person("Anthony", "Caravaggi", email = "ar.caravaggi@gmail.com", role = c("aut", "cre"),
-person("Tim C.D.", "Lucas", email = "timcdlucas@gmail.com", role = "aut"))
+  person("Anthony", "Caravaggi", email = "ar.caravaggi@gmail.com", role = c("aut", "cre")),
+  person("Tim C.D.", "Lucas", email = "timcdlucas@gmail.com", role = "aut"))
 Description: An implementation of the Random Encounter Model method of
     estimating animal densities from camera trap data and the calculation of relevant parameters.
 Depends:
     R (>= 3.3.1)
 License: GPL-3
-URL:  
+URL: https://github.com/arcaravaggi/RandEM
 BugReports: https://github.com/arcaravaggi/RandEM/issues
 Encoding: UTF-8
 LazyData: true
@@ -17,5 +17,5 @@ RoxygenNote: 5.0.1
 Suggests: knitr,
     rmarkdown,
     testthat,
-	ggplot2
+	  ggplot2
 VignetteBuilder: knitr

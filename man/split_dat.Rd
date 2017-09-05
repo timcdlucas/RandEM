@@ -24,4 +24,3 @@ grpDat <- split_dat(hDat)
 lapply(grpDat, head)
 lapply(grpDat, nrow)
 }
-

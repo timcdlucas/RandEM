@@ -1,0 +1,11 @@
+^\.git*
+^\.httr-oauth$
+^.*\.Rproj$
+^\.Rproj\.user$
+.travis.yml
+code_of_conduct.md
+figure*
+README.Rmd
+README.html
+README.md
+cran-comments.md
