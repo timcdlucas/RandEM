@@ -1,5 +1,5 @@
 ---
-title: "remBoot User Guide"
+title: "RandEM User Guide"
 author: "Anthony Caravaggi (@thonoir; arcaravaggi.co.uk)"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -14,7 +14,7 @@ vignette: >
 Read the packaged data file. These data are from a study of hares in Northern Ireland, published as Caravaggi _et al._ (2016). The first 5 columns of any data set must follow the same format in terms of column contents.
 
 ```{r include = TRUE}
-library(remBoot)
+library(RandEM)
 
 data(hDat)
 ```
@@ -96,7 +96,7 @@ nboots <- 1000
 Now we use the bootstrapping function __boot_sd__ on each group dataframe n (i.e.nboots) times. Note that tm and v must be the same across all sites. If this is not the case, split your data into separate dataframes before bootstrapping and run the function on each group individually.
 
 ```{r include = TRUE}
-remsD <- lapply(grpDat, boot_sd)
+remsD <- lapply(grpDat, boot_sd, tm, v, nboots)
 ```
 
 Now calculate the standard deviation for each site.
