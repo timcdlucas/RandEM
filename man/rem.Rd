@@ -44,7 +44,8 @@ rem(hDat, tm = 3360, v = 1.4)
 ## For multiple survey sites, assuming tm and v are constant:
 rem(dat = grpDat[[1]], tm, v)
 
-## If tm and v differ for each survey site, we can specify them alongside the REM function, as below. Note that if the focal species is a constant, v should not change.
+## If tm and v differ for each survey site, we can specify them alongside the REM function, 
+#    as below. Note that if the focal species is a constant, v should not change.
 
 rem(dat = grpDat[[1]], tm = 3600, v = 1.4)
 rem(dat = grpDat[[2]], tm = 3360, v = 1.4) 
