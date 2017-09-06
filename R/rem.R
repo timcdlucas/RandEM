@@ -45,7 +45,7 @@
 #' 
 #' ## Use the bootstrapping function boot_sd on each group dataframe n 
 #' #    (i.e.nboots) times and calculate the standard deviation:
-#' remsD <- lapply(grpDat, boot_sd) 
+#' remsD <- lapply(grpDat, boot_sd, tm, v, nboots)
 #' remsSD <- lapply(remsD, sd)
 #' remsSD
 

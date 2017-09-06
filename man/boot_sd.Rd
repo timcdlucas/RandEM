@@ -25,7 +25,7 @@ v <- 0.85
 nboots <- 1000
 
 grpDat <- split_dat(hDat)
-remsD <- lapply(grpDat, boot_sd, tm, v)
+remsD <- lapply(grpDat, boot_sd, tm, v, nboots)
 remsSD <- lapply(remsD, sd)
 remsSD
 
