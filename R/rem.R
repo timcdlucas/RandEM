@@ -43,7 +43,8 @@
 #' ## Before calculating variance, define the number of bootstrap iterations:
 #' nboots <- 1000
 #' 
-#' ## Use the bootstrapping function boot_sd on each group dataframe n (i.e.nboots) times and calculate the standard deviation:
+#' ## Use the bootstrapping function boot_sd on each group dataframe n 
+#' #    (i.e.nboots) times and calculate the standard deviation:
 #' remsD <- lapply(grpDat, boot_sd) 
 #' remsSD <- lapply(remsD, sd)
 #' remsSD
