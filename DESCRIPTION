@@ -1,6 +1,6 @@
 Package: RandEM
 Title: Population density estimates via Random Encounter Models in R
-Version: 0.0.0.9000
+Version: 0.0.1.9000
 Authors@R: c(
   person("Anthony", "Caravaggi", email = "ar.caravaggi@gmail.com", role = c("aut", "cre")),
   person("Tim C.D.", "Lucas", email = "timcdlucas@gmail.com", role = "aut"))
