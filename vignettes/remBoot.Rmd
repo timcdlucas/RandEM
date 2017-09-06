@@ -1,5 +1,5 @@
 ---
-title: "remBoot User Guide"
+title: "RandEM User Guide"
 author: "Anthony Caravaggi (@thonoir; arcaravaggi.co.uk)"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
