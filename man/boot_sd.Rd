@@ -4,10 +4,14 @@
 \alias{boot_sd}
 \title{Required for remsD bootstrapping}
 \usage{
-boot_sd(x)
+boot_sd(x, tm, v)
 }
 \arguments{
-\item{x}{= bsD resampled data}
+\item{x}{bsD resampled data}
+
+\item{tm}{(numeric) The total number of hours all cameras were left in-situ at a focal site}
+
+\item{v}{(numeric) The distance travelled by the focal species in 24 hours, in kilometres}
 }
 \description{
 Resamples camera trap data to calculate variance for Random Encounter Model density estimates. Note that tm and v must be the same across all sites. If this is not the case, split your data before bootstrapping and run the function on each sub-group. Called by remsD. Calls bsD.
