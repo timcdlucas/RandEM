@@ -2,7 +2,7 @@
 
 # calcDensity is the main function to calculate density.
 # It takes parameters z, alpha, theta, r, animalSpeed, t
-# z - The number of camera/acoustic counts or captures.
+# count - The number of camera/acoustic counts or captures.
 # alpha - Call width in radians.
 # theta - Sensor width in radians.
 # r - Sensor range in metres.
@@ -67,15 +67,15 @@ calcProfileWidth <- function(alpha, theta, r){
 #'@name gremDensity
 #'@export
 
-gremDensity <- function(z, alpha, theta, r, animalSpeed, t){
+gremDensity <- function(count, alpha, theta, r, v, tm){
         # Check the parameters are suitable.
-        if(z <= 0 | !is.numeric(z)) stop('Counts, z, must be a positive number.')
-        if(animalSpeed <= 0 | !is.numeric(animalSpeed)) stop('animalSpeed must be a positive number.')
-        if(t <= 0 | !is.numeric(t)) stop('Time, t, must be a positive number.')
+        if(count <= 0 | !is.numeric(count)) stop('Count must be a positive number.')
+        if(v <= 0 | !is.numeric(v)) stop('animalSpeed must be a positive number.')
+        if(tm <= 0 | !is.numeric(tm)) stop('Time, t, must be a positive number.')
 
         # Calculate profile width, then density.
         p <- calcProfileWidth(alpha, theta, r)
-        D <- z/{animalSpeed*t*p}
+        D <- count / {v * tm * p}
         return(D)
 }
 
@@ -105,20 +105,20 @@ gremDensity <- function(z, alpha, theta, r, animalSpeed, t){
 #'
 #' Yapp, W. (1956) The theory of line transects. Bird Study, 3, 93-104.
 #'@seealso  \code{\link{gremDensity}}
-#'@param z Number of detections.
+#'@param count Number of detections.
 #'@param alpha Call width in radians.
 #'@param theta Detector width in radians.
 #'@param r Sensor detection radius in metres.
-#'@param animalSpeed Average animal speed in metres per second.
-#'@param t Total survey time. This is the amount of time the sensors are
+#'@param v Average animal speed in metres per second.
+#'@param tm Total survey time. This is the amount of time the sensors are
 #'    active multiplied by the number of sensors used.
 #'@param area The size of the study area in metres squared.
 #'@name gremAbundance
 #'@export
 
-gremAbundance <- function(z, alpha, theta, r, animalSpeed, t, area){
+gremAbundance <- function(count, alpha, theta, r, v, tm, area){
         if(area <= 0 | !is.numeric(area)) stop('Area must be a positive number')
-        D <- gremDensity(z, alpha, theta, r, animalSpeed, t)
+        D <- gremDensity(count, alpha, theta, r, v, tm)
         A <- D*area
         return(A)
 }

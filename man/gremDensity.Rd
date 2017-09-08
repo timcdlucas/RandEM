@@ -4,10 +4,10 @@
 \alias{gremDensity}
 \title{Calculate population density using the gREM.}
 \usage{
-gremDensity(z, alpha, theta, r, animalSpeed, t)
+gremDensity(count, alpha, theta, r, v, tm)
 }
 \arguments{
-\item{z}{Number of detections.}
+\item{count}{Number of detections.}
 
 \item{alpha}{Call width in radians.}
 
@@ -15,9 +15,9 @@ gremDensity(z, alpha, theta, r, animalSpeed, t)
 
 \item{r}{Sensor detection radius in metres.}
 
-\item{animalSpeed}{Average animal speed in metres per second.}
+\item{v}{Average animal speed in metres per second.}
 
-\item{t}{Total survey time. This is the amount of time the sensors are
+\item{tm}{Total survey time. This is the amount of time the sensors are
 active multiplied by the number of sensors used.}
 }
 \description{
