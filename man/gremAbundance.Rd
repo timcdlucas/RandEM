@@ -4,10 +4,10 @@
 \alias{gremAbundance}
 \title{Calculate abudance using the gREM.}
 \usage{
-gremAbundance(z, alpha, theta, r, animalSpeed, t, area)
+gremAbundance(count, alpha, theta, r, v, tm, area)
 }
 \arguments{
-\item{z}{Number of detections.}
+\item{count}{Number of detections.}
 
 \item{alpha}{Call width in radians.}
 
@@ -15,9 +15,9 @@ gremAbundance(z, alpha, theta, r, animalSpeed, t, area)
 
 \item{r}{Sensor detection radius in metres.}
 
-\item{animalSpeed}{Average animal speed in metres per second.}
+\item{v}{Average animal speed in metres per second.}
 
-\item{t}{Total survey time. This is the amount of time the sensors are
+\item{tm}{Total survey time. This is the amount of time the sensors are
 active multiplied by the number of sensors used.}
 
 \item{area}{The size of the study area in metres squared.}

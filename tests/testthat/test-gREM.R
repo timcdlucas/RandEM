@@ -45,7 +45,7 @@ test_that('Density returns error if p is 0', {
 #        expect_that(gremDensity(2, 0, 0.1, 10, 2, 2), throws_error())
 })
 
-test_that('z of zero gives error', {
+test_that('count of zero gives error', {
         expect_that(gremDensity(0, 0.1, 0.1, 2, 2, 2), throws_error())
 })
 
