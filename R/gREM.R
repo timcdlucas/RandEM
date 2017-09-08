@@ -6,7 +6,7 @@
 # alpha - Call width in radians.
 # theta - Sensor width in radians.
 # r - Sensor range in metres.
-# animalSpeed - Average animal speed in metres per second.
+# v - Average animal speed in metres per second.
 # t - Length of survey in sensor seconds i.e. number of sensors x survey duration.
 #
 # calcAbundance calculates abundance rather than density and requires an extra parameter

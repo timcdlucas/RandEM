@@ -10,7 +10,7 @@
 #' 
 #' For a detailed example of how to use rem, click (\href{http://htmlpreview.github.io/?https://github.com/arcaravaggi/remBoot/blob/master/vignettes/remBoot.html}{here}).
 #' 
-#' @param dat = the data frame
+#' @param dat The data frame
 #' @param tm (numeric) The total number of hours all cameras were left in-situ at a focal site
 #' @param v (numeric) The distance travelled by the focal species in 24 hours, in kilometres
 #' @keywords density, population, random encounter model
