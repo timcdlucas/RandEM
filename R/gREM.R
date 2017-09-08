@@ -71,7 +71,7 @@ gremDensity <- function(count, alpha, theta, r, v, tm){
         # Check the parameters are suitable.
         if(count <= 0 | !is.numeric(count)) stop('Count must be a positive number.')
         if(v <= 0 | !is.numeric(v)) stop('animalSpeed must be a positive number.')
-        if(tm <= 0 | !is.numeric(tm)) stop('Time, t, must be a positive number.')
+        if(tm <= 0 | !is.numeric(tm)) stop('Time, tm, must be a positive number.')
 
         # Calculate profile width, then density.
         p <- calcProfileWidth(alpha, theta, r)
