@@ -29,9 +29,9 @@ Essentials
 Possible additions  
   
 * Survey design tools (e.g. draw survey area in Google maps; generate X random points)
-* Web app to calculate densities via REM
-* REST model? Nakashima Y, Fukasawa K, Samejima H. Estimating animal density without individual recognition using information derivable exclusively from camera traps. J Appl Ecol. 2018;55:735–744. https://doi.org/10.1111/1365-2664.13059  
-
+* Web app to calculate densities via REM. Bare bones one already [here](https://timcdlucas.shinyapps.io/gremApp/). Oops launching it from the r package would be useful.
+* REST model? Nakashima Y, Fukasawa K, Samejima H. Estimating animal density without individual recognition using information derivable exclusively from camera traps. J Appl Ecol. 2018;55:735–744. https://doi.org/10.1111/1365-2664.13059   
+* Functions for calculating detection distance and radius for acoustic data.
 
 ## Contributions
 
