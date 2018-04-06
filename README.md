@@ -6,7 +6,7 @@ Random Encounter Models allow the estimation of animal population densities and 
 
 Here, we aim to produce a comprehensive toolkit for REM analyses in R. 
 
-We encourage anyone interested in contributing to get in touch.
+We encourage anyone interested in contributing to get in touch. Contact ar.caravaggi at Gmail.
 
 
 # Installation
@@ -19,12 +19,18 @@ devtools::install_github("arcaravaggi/RandEM")
 
 # Road map
 
-Includes
+Essentials
 
-* Effective Detection Distance (EDD)
-* REMs
-* Survey design tools
+* Basic REMs
+* Effective Detection Distance (EDD; TH)
+* iREM (NJ)
+* gREM (TL)
+
+Possible additions  
+  
+* Survey design tools (e.g. draw survey area in Google maps; generate X random points)
 * Web app to calculate densities via REM
+* REST model? Nakashima Y, Fukasawa K, Samejima H. Estimating animal density without individual recognition using information derivable exclusively from camera traps. J Appl Ecol. 2018;55:735–744. https://doi.org/10.1111/1365-2664.13059  
 
 
 ## Contributions
