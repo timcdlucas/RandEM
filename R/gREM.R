@@ -73,9 +73,13 @@ gremDensity <- function(count, alpha, theta, r, v, tm){
         if(v <= 0 | !is.numeric(v)) stop('animalSpeed must be a positive number.')
         if(tm <= 0 | !is.numeric(tm)) stop('Time, tm, must be a positive number.')
 
+        # Convert everything to kilometers and days
+        r_kilometers <- r / 1000
+        tm_days <- tm / 24
+  
         # Calculate profile width, then density.
-        p <- calcProfileWidth(alpha, theta, r)
-        D <- count / {v * tm * p}
+        p <- calcProfileWidth(alpha, theta, r_kilometers)
+        D <- count / {v * tm_days * p}
         return(D)
 }
 
@@ -109,16 +113,17 @@ gremDensity <- function(count, alpha, theta, r, v, tm){
 #'@param alpha Call width in radians.
 #'@param theta Detector width in radians.
 #'@param r Sensor detection radius in metres.
-#'@param v Average animal speed in metres per second.
-#'@param tm Total survey time. This is the amount of time the sensors are
+#'@param v Average animal speed in kilometers per day.
+#'@param tm Total survey time in hours. This is the amount of time the sensors are
 #'    active multiplied by the number of sensors used.
-#'@param area The size of the study area in metres squared.
+#'@param area The size of the study area in kilometers squared.
 #'@name gremAbundance
 #'@export
 
 gremAbundance <- function(count, alpha, theta, r, v, tm, area){
         if(area <= 0 | !is.numeric(area)) stop('Area must be a positive number')
+  
         D <- gremDensity(count, alpha, theta, r, v, tm)
-        A <- D*area
+        A <- D * area
         return(A)
 }
