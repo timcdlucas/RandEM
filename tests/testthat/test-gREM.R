@@ -51,3 +51,33 @@ test_that('count of zero gives error', {
 
 
 # gremAbundance() tests
+
+
+
+
+
+# Compare rem and gREM
+
+test_that('rem and gREM give consistent results.', {
+  
+  # Gas model.
+  tm <- 50 #hours
+  v <- 30 # kilometers per day
+  r <- 9 # meters
+  count <- 11
+  
+  # grem requires alpha. Set to 2*pi to make equivalent to REM.
+  alpha <- 2*pi
+  
+  # Try gas model here, other REM below.
+  theta <- pi / 3
+  
+  
+  grem_result <- gremDensity(count, alpha, theta, r, v, tm)
+    
+  
+  rem_result <- rem(dat = data.frame(1, count, r, theta), tm, v)
+    
+  expect_true(abs(grem_result - rem_result) < 1e-6)
+  
+})
