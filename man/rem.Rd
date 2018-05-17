@@ -7,7 +7,7 @@
 rem(dat, tm, v)
 }
 \arguments{
-\item{dat}{= the data frame}
+\item{dat}{The data frame}
 
 \item{tm}{(numeric) The total number of hours all cameras were left in-situ at a focal site}
 

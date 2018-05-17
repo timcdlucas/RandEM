@@ -53,11 +53,20 @@
 rem <- function(dat, tm, v){
   # Calculate y: total captures
   y <- sum(dat[,2])
+  
+  # Convert to kilometres and days
+  # Convert time to days
+  tm_days <- tm / 24
+  
+  # Convert r to kilometres
+  r_kilometers <- mean(dat[,3], na.rm = TRUE) / 1000
+  
+  # Take mean of angles
+  theta <- mean(dat[,4], na.rm = TRUE)
+  
   # Calculate the first half of the equation above
-  trm1 <- y/tm
-  trm2 <- pi/((v*mean(dat[,3], 
-                      na.rm = TRUE)) * (2 + (mean(dat[,4], 
-                                                  na.rm = TRUE))))
+  trm1 <- y / tm_days
+  trm2 <- pi / (v * r_kilometers * (2 + theta))
   # Calculate D
   return(trm1 * trm2)
 }

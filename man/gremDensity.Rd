@@ -15,9 +15,9 @@ gremDensity(count, alpha, theta, r, v, tm)
 
 \item{r}{Sensor detection radius in metres.}
 
-\item{v}{Average animal speed in metres per second.}
+\item{v}{Average animal speed in kilometers per day.}
 
-\item{tm}{Total survey time. This is the amount of time the sensors are
+\item{tm}{Total survey time in hours. This is the amount of time the sensors are
 active multiplied by the number of sensors used.}
 }
 \description{
