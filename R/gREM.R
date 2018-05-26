@@ -25,7 +25,7 @@ calcProfileWidth <- function(alpha, theta, r){
 		stop('theta is out of bounds. theta should be in interval 0<a<2*pi')
 
 	if(alpha > pi){
-	        if(alpha < 4*pi - 2*theta){
+	      if(alpha < 4*pi - 2*theta){
 		        p <- r*(theta - cos(alpha/2) + 1)/pi
                 } else if(alpha <= 3*pi - theta){
                         p <- r*(theta - cos(alpha/2) + cos(alpha/2 + theta))/pi
@@ -35,7 +35,7 @@ calcProfileWidth <- function(alpha, theta, r){
         } else {
         	if(alpha < 4*pi - 2*theta){
                         p <- r*(theta*sin(alpha/2) - cos(alpha/2) + 1)/pi
- 		} else {
+ 		      } else {
                         p <- r*(theta*sin(alpha/2) - cos(alpha/2) + cos(alpha/2 + theta))/pi
                 }
         }
