@@ -7,7 +7,6 @@ Authors@R: c(
 Description: An implementation of the Random Encounter Model method of
     estimating animal densities from camera trap data and the calculation of relevant parameters.
 Depends:
-    R (>= 3.3.4)
 License: GPL-3
 URL: https://github.com/arcaravaggi/RandEM
 BugReports: https://github.com/arcaravaggi/RandEM/issues
