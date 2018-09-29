@@ -5,8 +5,28 @@ sudo: required
 # cache packages to speed up builds
 cache: packages
 
+## Email notification if the package pass status changes
+notifications:
+email:
+  recipients:
+    - timcdlucas@gmail.com
+  on_success: change
+  on_failure: change
+
+
 # Check code test coverage
 r_packages:
  - covr
 after_success:
  - Rscript -e 'library(covr);codecov()'
+
+matrix:
+  include:
+    - os: linux
+      r: release
+    - os: linux
+      r: devel
+    - os: osx
+      r: release
+    
+
