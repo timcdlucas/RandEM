@@ -13,7 +13,7 @@ We encourage anyone interested in contributing to get in touch. Contact ar.carav
 
 
 ```r
-devtools::install_github("arcaravaggi/RandEM")
+devtools::install_github("timcdlucas/RandEM")
 ```
 
 
