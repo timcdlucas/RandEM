@@ -4,7 +4,7 @@ Version: 0.0.1.9001
 Authors@R: c(
   person("Anthony", "Caravaggi", email = "ar.caravaggi@gmail.com", role = "aut"),
   person("Tim C.D.", "Lucas", email = "timcdlucas@gmail.com", role = c("aut", "cre")),
-  person("Natoya", "Jourdain", email = "natoya.jourdain@hi.no", rote = c("aut"))
+  person("Natoya", "Jourdain", email = "natoya.jourdain@hi.no", role = "aut"))
 Description: Random Encounter Models for estimating animal densities from camera trap 
   and acoustic sensor data and the calculation of relevant parameters.
 Depends: MASS
