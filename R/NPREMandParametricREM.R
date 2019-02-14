@@ -53,9 +53,9 @@
                                           EstimatedDensity
                       }
 
-BootstrapEstimatedDensityNPREM  = NPREMBootstrap(Y, V, B)
-BootstrapStandardErrorNPREM     = sqrt(var(BootstrapEstimatedDensityNPREM))
-LogBootstrapStandardErrorNPREM  = sd(log(BootstrapEstimatedDensityNPREM))
+      BootstrapEstimatedDensityNPREM  = NPREMBootstrap(Y, V, B)
+      BootstrapStandardErrorNPREM     = sqrt(var(BootstrapEstimatedDensityNPREM))
+      LogBootstrapStandardErrorNPREM  = sd(log(BootstrapEstimatedDensityNPREM))
 
            #Percentile confidence intervals---------------------------
               qqPercentile   = quantile(BootstrapEstimatedDensityNPREM ,c(0.025,0.975))   

@@ -10,7 +10,7 @@
 #' @example
 #' out <- iREM(wwapspeed$V1, wwapdata$Y, length(wwapspeed$V1), length(wwapdata$Y), 10)
 
-iREM <- function(V1, Y, m, n, A){
+iREMGamma <- function(V1, Y, m, n, A){
 
     # Fit NB model or Poisson if var(Y) < mean(Y)
       if (var(Y) < mean(Y)) {
