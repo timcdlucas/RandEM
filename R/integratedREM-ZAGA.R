@@ -64,7 +64,7 @@ iREM <- function(V1, Y, m, n, A){
         HessianAndTheoretical      = c(HessianEstimatedDensityiREM, TheoreticalError) 
         
      return(
-       list(parameters = AllEstimatesGamma, standarderrors = AllErrorsGamma, gamma = HessianAndTheoreticalGamma)
+       list(parameters = AllEstimates, standarderrors = AllErrors, gamma = HessianAndTheoretical)
      )
         
 }
@@ -114,7 +114,7 @@ PoissonZAGAiREM = function(param, Y, V, A){
                   Mu                 = ExpectedSpeed/(1-WeightOfZeros)
                   lambda             = A*ExpectedSpeed*Density
                  -sum(dpois(Y, lambda, log=TRUE))-
-                  sum(dZAGA(V, Mu, ShapeParameter, WeightOfZeros, log=TRUE))}
+                  sum(gamlss.dist::dZAGA(V, Mu, ShapeParameter, WeightOfZeros, log=TRUE))}
 
 
 #-------------------------------------------------------------------
@@ -129,7 +129,7 @@ NBZAGAiREM = function(param, Y, V, A){
                   Mu                 = ExpectedSpeed/(1-WeightOfZeros)
                   lambda             = A*ExpectedSpeed*Density
                  -sum(dnbinom(Y, mu=lambda, size=1/Kappa, log=TRUE))-
-                  sum(dZAGA(V, Mu, ShapeParameter, WeightOfZeros, log=TRUE))}
+                  sum(gamlss.dist::dZAGA(V, Mu, ShapeParameter, WeightOfZeros, log=TRUE))}
 
 
 
